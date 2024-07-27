@@ -1,0 +1,2 @@
+Best Number Components:	2
+Best Error:	 0.03100920692620216

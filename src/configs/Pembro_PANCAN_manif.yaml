@@ -1,0 +1,31 @@
+EXPERIMENT_PARAMS:
+  drug: 'Pembro'
+  tissue: 'PANCAN'
+  alpha: 0.0
+  genesets: ['kegg','auslander','vogelstein']
+  de_thresh: 0.01
+  trim: False
+  
+
+DIRECTORIES:
+  data_dir: "../data/expression"
+  geneset_dir: "../data/genesets"
+  res_base: "../results"
+  fig_base: "../figs"
+  clinical_file: "../data/cri/iatlas-ici-sample_info.tsv"
+
+
+
+GRAPH_PARAMS:
+  num_nbrs: 5
+  do_log_transform: True
+  offset: 1
+  manifold: True
+  
+COMMUNITY_PARAMS:
+  num_iters: 50
+  step_size: 0.3
+  min_size: 5
+  drop_threshold: 0.001
+  weight_step: 0.0005
+  weight_field: 'weight'
